@@ -1,0 +1,72 @@
+#tupla são listas q n podem ter seus elementos alterados
+tupla = (1,2,3)
+tupla[0]
+tupla[-2]
+tupla[1:]
+len(tupla)   #para ver a lista(tbm funciona na lista)
+
+tupla2 = 100,200,300
+a, b = 10, 20
+a, b, c = tupla2
+
+"""
+tupla3 = [1,"a",[1,2,3], True]
+tupla3[2] ---- saida [1,2,3]
+tupla3[0] ----- saida [1]
+
+lista3 = list(tupla3) # podemos converter a tupla para lista e vice versa
+tupla3 = tupla(lista) 
+
+*a, b = tupla3 (o valor com * recebe toda lista menos o ultimo elemento, ja o sem * mostra o ultimo)
+"""
+
+a= set() #set seria equivalente ao conjunto
+a.add(1) #adicionar valores ao conjunto
+a.add(2)
+a.add(3)
+a.add(1) #se adicionar o mesmo numero n acontece nada
+a.add(-1) #o numero ficara na ondem add... a= {1,2,3,-1}
+"""
+1 in a # daria True
+5 in a # daria False
+"""
+
+b = set([2,3,4])
+c = set(list(range(1,10)))
+d = set(tupla)
+
+#exemplo de união
+A={1,2,3,6}
+B={2,4,5,6}
+A | B
+A.union(B) # daria {1,2,3,4,5,6}
+
+#exemplo de inteseção
+A & B # daria {2,6}
+
+#exemplo de diferença: A - B ("ou") A.difference(B) # daria {1,3}
+
+#exemplo de simetria: A ^ B ("ou") A.symmetric.difference(B)
+
+#ja listas podem ser alteradas com append
+lista = [1,2,3]
+lista.append(2)
+
+#dicionario ( ja aprendido em exec.projetos)
+
+tabela {
+"Arroz 5kg": 24.90,
+"Feijão 1kg": 8.50,
+"Óleo de soja 900ml": 6.70,
+"leite 1L": 4.80,
+"Café 500g": 14.20,
+"Açúcar 1kg":3.9
+}
+print (tabela)
+
+tabela.get("Arroz 5kg") #caso não esteja no dicionario n retorna nada
+
+tabela["Arroz 5kg"] = 30 # alterar valor da tabela
+professores = {}
+professores["orlando"] = lp1
+professores["henry"] = iot
