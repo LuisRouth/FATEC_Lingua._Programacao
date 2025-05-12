@@ -1,0 +1,8 @@
+frase = input("Digite uma frase: ")
+minus = frase.lower()
+a = minus.count("a")
+e = minus.count("e")
+i = minus.count("i")
+o = minus.count("o")
+u = minus.count("u")
+print ("Existem:",a,"letras A,",e,"letras E,",i,"letras I,",o,"letras O e",u,"letras U,")

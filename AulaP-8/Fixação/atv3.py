@@ -1,0 +1,5 @@
+frase = input("Digite uma frase: ")
+frase.lower()
+pala =  input("Digite uma palavra que quer verificar que existe na sua frase: ")
+onde = frase.find(pala)
+print("Sua palavra aparece e esta na posição",onde,"da sua frase!")

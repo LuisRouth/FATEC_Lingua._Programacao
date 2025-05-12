@@ -1,0 +1,53 @@
+nome = "ana"
+idade = 40
+mensagem = f"ola {nome},sua idade: {idade} anos"
+
+len(mensagem) lens da a quanidade de caracteres
+mensagem[0:20] pega um pedaço da sting
+
+Maneiras de verificar se tem uma "palavra" na string
+S =Fatec Rio Claro
+S.startswith("Fatec")       = true
+S.startswith("fatec")       = false
+S.endswith("Claro")         = true
+S.endswith("x")             = false
+"Fatec" in S                = true
+
+Verifica a quantidades de elementos procurados
+T ="um tigre,dois tigres,três tigres"
+T.count("tigre")            = 3
+T.count("tigres")           = 2
+
+Encontrar uma posição da string ( espaços tambem contam)
+S =Fatec Rio Claro
+S.find("Rio")               = 7
+S[7:10]                     = Rio
+S[7:7+3]                    = Rio
+
+Centralizar
+S =Fatec
+"X" + S.center(20,".") + "X"
+"X......Fatec......X"
+"X" + S.center(20,) + "X"
+"X      Fatec      X"
+
+Quebra string
+T ="um tigre,dois tigres,três tigres"
+T.split(",")                = ["um tigre","dois tigres","três tigres"]   # gera uma lista removendo os caracteres digitados
+Lista = T.split(",") 
+T.split("e")                = ["um tigr",",dois tigr","s , três tigr","s"]
+T.replace("tigre","gato",1) # primeiro o original, segundo o por o que eu quero que troque, e terceiro uma quantidades
+
+s=123
+s.is
+s.isnumeric()                = True
+s.isapha()                   = False
+
+
+nome = Ana
+idade = 40
+s1 = "Ola {nome}. Você tem {idade} anos.format(nome="Maria",idade=30)
+
+
+T.uppper()   #Deixa tudo maiusculo
+t.lower()   #Deixa tudo minusculo
